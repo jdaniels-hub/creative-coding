@@ -21,13 +21,36 @@
     <pre>       ee       </pre>
     <pre>       ss       </pre>
     <pre>       ss       </pre>
-    <pre>l      ll      l</pre>
-    <pre> o     oo     o </pre>
-    <pre>  v    vv    v  </pre>
-    <pre>   e   ee   e   </pre>
-    <pre>    l  ll  l    </pre>
-    <pre>     e ee e     </pre>
-    <pre>      ssss      </pre>
-    <pre>       ss       </pre>
+    <pre><span id="grow">l</span>      ll      <span id="grow">l</span></pre>
+    <pre> <span id="grow">o</span>     oo     <span id="grow">o</span> </pre>
+    <pre>  <span id="grow">v</span>    vv    <span id="grow">v</span>  </pre>
+    <pre>   <span id="grow">e</span>   ee   <span id="grow">e</span>   </pre>
+    <pre>    <span id="grow">l</span>  ll  <span id="grow">l</span>    </pre>
+    <pre>     <span id="grow">e</span> ee <span id="grow">e</span>     </pre>
+    <pre>      <span id="grow">s</span>ss<span id="grow">s</span>      </pre>
+    <pre>       <span id="grow">s</span><span id="grow">s</span>       </pre>
+
+    <script type="text/javascript">
+let g = document.getElementById("grow");
+
+// set the font-size property in JavaScript
+g.style.fontSize = "100%";
+
+// add a function to the onclick event
+g.onclick = function(){
+
+     // determine current font size and convert it to an integer
+     let fs = Number(this.style.fontSize.replace("%",""));
+
+     // make sure it worked
+     console.log(fs);
+
+     // change the color of the clicked element
+     this.style.color = "red";
+
+     // change the font size to increase it by 10%
+     this.style.fontSize = fs * 1.1 + "%";
+};
+</script>
 
 </body>
