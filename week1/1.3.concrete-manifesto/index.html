@@ -34,26 +34,26 @@
     <pre>       <span id="grow">s</span><span id="grow">s</span>       </pre>
 
     <script type="text/javascript">
-let g = document.getElementById("grow");
+	let g = document.getElementById("grow");
 
-// set the font-size property in JavaScript
-g.style.fontSize = "100%";
+	// set the font-size property in JavaScript
+	g.style.fontSize = "100%";
 
-// add a function to the onclick event
-g.onclick = function(){
+	// add a function to the onclick event
+	g.onclick = function(){
 
-     // determine current font size and convert it to an integer
-     let fs = Number(this.style.fontSize.replace("%",""));
+	     // determine current font size and convert it to an integer
+	     let fs = Number(this.style.fontSize.replace("%",""));
 
-     // make sure it worked
-     console.log(fs);
+	     // make sure it worked
+	     console.log(fs);
 
-     // change the color of the clicked element
-     this.style.color = "red";
+	     // change the color of the clicked element
+	     this.style.color = "red";
 
-     // change the font size to increase it by 10%
-     this.style.fontSize = fs * 1.1 + "%";
-};
-</script>
+	     // change the font size to increase it by 10%
+	     this.style.fontSize = fs * 1.1 + "%";
+	};
+    </script>
 
 </body>
